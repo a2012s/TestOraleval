@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cn.yunzhisheng.cn.oraleval.demo.example.MainActivity">
+    <!--<item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" android:showAsAction="never" />
+    <item android:id="@+id/action_elastic" android:title="@string/action_elastic"
+        android:orderInCategory="100" android:showAsAction="never" />-->
+</menu>

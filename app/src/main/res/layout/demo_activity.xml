@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:id="@+id/button"
+        android:layout_below="@+id/editText"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:id="@+id/play_b"
+        android:layout_below="@id/editText"
+        android:layout_toRightOf="@id/button"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/cancel_b"
+        android:layout_below="@id/editText"
+        android:layout_toRightOf="@id/play_b"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retry"
+        android:id="@+id/retry_b"
+        android:layout_below="@id/editText"
+        android:layout_toRightOf="@id/cancel_b"/>
+
+    <EditText
+        android:id="@+id/et_elast"
+        android:maxLines="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_url"
+        android:layout_below="@id/et_elast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="Hello 3, I'm nice to meet you."
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_below="@+id/et_url"
+        android:id="@+id/editText"  android:layout_centerHorizontal="true"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:singleLine="false"
+        android:id="@+id/scroll" android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="false"
+            android:id="@+id/textView" android:layout_alignParentLeft="true"
+            />
+    </ScrollView>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_below="@+id/editText" android:layout_toRightOf="@id/retry_b"
+        android:layout_alignBottom="@+id/play_b"/>
+</RelativeLayout>
